@@ -1,0 +1,127 @@
+/* Fondo principal */
+body {
+    background-color: #F0F8FF; /* Celeste suave */
+    color: #3A3A8C; /* Azul profundo para texto */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Carrusel */
+#carouselExampleAutoplaying .carousel-inner {
+    position: relative;
+}
+
+/* Contenido centrado sobre el carrusel */
+.carousel-caption {
+    position: absolute;
+    top: 50%;               /* Centra el texto verticalmente */
+    left: 50%;              /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%);  /* Ajuste para centrar completamente */
+    text-align: center;
+    color: white;           /* Color blanco para la frase */
+    font-size: 2rem;        /* Tamaño de la fuente */
+    font-weight: 700;       /* Peso de la fuente */
+    font-family: 'Montserrat', sans-serif; /* Fuente personalizada */
+    z-index: 10;            /* Asegura que el texto esté por encima de la imagen */
+}
+
+/* Sombra para mejorar la visibilidad del texto */
+.carousel-caption h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Estilos adicionales del contenido fuera del carrusel */
+.hero-content {
+    position: relative;   /* Para que esté por debajo del carrusel sin interferir */
+    text-align: center;
+    color: white;
+    z-index: 5;
+    padding: 30px;        /* Añadido para separar el contenido del borde */
+}
+
+/* Estilo de los textos dentro de hero-content */
+.hero-content h1 {
+    font-size: 2rem;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+}
+
+.hero-content button {
+    background-color: #6A5ACD; /* Violeta claro */
+    border: none;
+}
+
+.hero-content button:hover {
+    background-color: #4682B4; /* Azul más oscuro para hover */
+}
+
+/* Ajuste del color de fondo en otras secciones */
+#rutas {
+    background-color: #F0F8FF; /* Celeste suave */
+}
+
+#encuesta {
+    background-color: #E6E6FA; /* Un lila claro */
+}
+
+/* Colores de los encabezados */
+h1, h2, h3 {
+    color: #3A3A8C; /* Azul profundo */
+}
+
+/* Colores de texto */
+h5, p, .card-body p {
+    color: #6A5ACD; /* Violeta claro para los textos secundarios */
+}
+
+/* Estilo para los botones */
+.btn-primary {
+    background-color: #6A5ACD; /* Violeta claro */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #4682B4; /* Azul más oscuro para hover */
+}
+
+/* Botones secundarios */
+.btn-info {
+    background-color: #4682B4; /* Azul más fuerte */
+    border: none;
+}
+
+.btn-info:hover {
+    background-color: #5F9EA0; /* Azul más suave para hover */
+}
+
+/* Footer */
+footer {
+    background-color: #3A3A8C; /* Azul profundo */
+    color: white;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Carteles de Testimonios */
+.card {
+    border: 1px solid #9370DB; /* Lila oscuro */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Carrusel */
+#carouselExampleAutoplaying .carousel-inner {
+    background-color: #E0E7FF; /* Azul lila claro */
+}
+
+
+
+#tituloInformacion{
+    color: rgb(236, 232, 232);
+    font-family: 'Montserrat', sans-serif; /* Fuente personalizada */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-size: 3rem;
+}
