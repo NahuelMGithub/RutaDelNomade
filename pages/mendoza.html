@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruta Mendocina</title>
+    <!-- Enlazamos Bootstrap y el CSS personalizado -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/RutaDelNomade/styles.css" rel="stylesheet"> <!-- Asegúrate de que el archivo CSS esté en la misma carpeta -->
+</head>
+<body>
+    <header class="bg-dark text-white py-4">
+        <nav class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="/RutaDelNomade/index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#rutas">Rutas</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Experiencias</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Comunidad</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 id="tituloInformacion">Conectamos nómadas digitales con experiencias únicas en Argentina.</h1>
+                    </div>
+                    <img src="/RutaDelNomade//img/mendoza3.webp" class="d-block w-100" alt="Mendoza">
+                </div>
+           </div>
+        </div>
+        <h2></h2>
+    
+    <!-- Primera Sección (Ruta Mendocina) -->
+    <section id="introduccion">
+        <div class="container text-center">
+            <h2 id="tituloInformacion">Ruta Mendocina</h2>
+            <img src="/RutaDelNomade/img/pages/mendoza 0.png" class="d-block w-100" alt="Mendoza">
+         
+            <p>
+                Descubre las maravillas de Mendoza con un itinerario único que te llevará a través de cinco increíbles ciudades. Cada una con su propio encanto, historia y paisajes. Prepárate para vivir experiencias inolvidables mientras exploras lo mejor de la región.
+            </p>
+<!-- Botón para abrir el modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detalleModal">
+    Detalles
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="detalleModal" tabindex="-1" aria-labelledby="detalleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="detalleModalLabel">Detalles del Itinerario</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Mendoza Capital</strong>: Disfrutarás de una mezcla de trabajo y aventura. Pasarás unos días en la ciudad, donde podrás trabajar en Coffice Mendoza y alojarte en el Hotel Diplomatic. Durante tu tiempo libre, disfrutarás de los encantos de la ciudad, como un recorrido por el Parque General San Martín, una visita a la Bodega Catena Zapata y una caminata hasta el Cerro de la Gloria. También podrás practicar deportes al aire libre, como el rafting en el río Mendoza, o realizar un recorrido en bicicleta por la Ruta del Vino.</p>
+          <p><strong>San Rafael</strong>: Aquí podrás trabajar en Workplace San Rafael y alojarte en el Tower Inn & Suites. Disfrutarás de una visita a las bodegas locales en la Ruta del Vino, un paseo por el impresionante Cañón del Atuel, y actividades como rafting en la Laguna El Nihuil. También tendrás la oportunidad de disfrutar del aire libre con un recorrido en 4x4 por el Desierto de Atuel y paseos en bicicleta de montaña.</p>
+          <p><strong>Valle de Uco</strong>: En esta región vinícola prestigiosa de Mendoza, podrás trabajar en el coworking Uco Work y alojarte en The Vines Resort & Spa, rodeado de viñedos. Tendrás tiempo para recorrer bodegas y disfrutar de catas de vino, o explorar la zona con actividades como senderismo en los Andes o pesca en el río Tunuyán. También podrás hacer un tour en bicicleta entre viñedos y realizar trekking en el Cerro del Plata.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+       
+        </div>
+    </section>
+    
+
+    <!-- Sección de Resumen -->
+    <section id="resumen" class="container py-5">
+        <h2 class="text-center">Resumen de Paradas</h2>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/RutaDelNomade/img/pages/mendoza1.jpg" class="card-img-top" alt="Ciudad 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Mendoza Capital </h5>
+                        <a href="#seccion1" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/RutaDelNomade/img/pages/mendoza2.jpg" class="card-img-top" alt="Ciudad 2">
+                    <div class="card-body">
+                        <h5 class="card-title">San Rafael</h5>
+                        <a href="#seccion2" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/RutaDelNomade/img/pages/mendoza3.jpg"  class="card-img-top" alt="Ciudad 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Uco Valley</h5>
+                        <a href="#seccion3" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/RutaDelNomade/img/pages/mendoza4.jpg"  class="card-img-top" alt="Ciudad 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Tunuyán</h5>
+                        <a href="#seccion4" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/RutaDelNomade/img/pages/mendoza5.jpg"  class="card-img-top" alt="Ciudad 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Malargüe</h5>
+                        <a href="#seccion5" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secciones de Información (Por completar más adelante) -->
+    <section id="seccion1" class="container py-5">
+        <h3>Mendoza Capital</h3>
+        <p>Información sobre qué hacer, dónde quedarse, y datos útiles.</p>
+    </section>
+
+    <section id="seccion2" class="container py-5">
+        <h3>San Rafael</h3>
+        <p>Información sobre qué hacer, dónde quedarse, y datos útiles.</p>
+    </section>
+
+    <section id="seccion3" class="container py-5">
+        <h3>Ciudad 3</h3>
+        <p>Información sobre qué hacer, dónde quedarse, y datos útiles.</p>
+    </section>
+
+    <section id="seccion4" class="container py-5">
+        <h3>Ciudad 4</h3>
+        <p>Información sobre qué hacer, dónde quedarse, y datos útiles.</p>
+    </section>
+
+    <section id="seccion5" class="container py-5">
+        <h3>Ciudad 5</h3>
+        <p>Información sobre qué hacer, dónde quedarse, y datos útiles.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>&copy; 2024 Ruta Mendocina. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -24,6 +24,8 @@ body {
     z-index: 10;            /* Asegura que el texto esté por encima de la imagen */
 }
 
+
+
 /* Sombra para mejorar la visibilidad del texto */
 .carousel-caption h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
@@ -61,7 +63,7 @@ body {
     background-color: #F0F8FF; /* Celeste suave */
 }
 
-#encuesta {
+.intermedio {
     background-color: #E6E6FA; /* Un lila claro */
 }
 
@@ -125,3 +127,47 @@ footer p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     font-size: 3rem;
 }
+
+#introduccion img {
+    margin-bottom: 10px;
+    filter: grayscale(20%);
+    transition: all 0.3s ease;
+}
+#introduccion img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+#introduccion p {
+    font-size: 22px;
+    color: #272727;
+}
+
+.card i {
+    color: #007bff; /* Color azul, se puede cambiar */
+}
+
+.card:hover {
+    background-color: #f8f9fa; /* Fondo más claro cuando se pasa el mouse */
+    transform: translateY(-10px); /* Mueve ligeramente la card hacia arriba */
+    transition: all 0.3s ease; /* Suaviza la transición */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra más prominente */
+}
+
+.card-body {
+    text-align: center; /* Centra el contenido dentro de las cards */
+}
+
+.card-title {
+    font-size: 1.2rem; /* Aumenta el tamaño del título */
+}
+
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de transición para el hover */
+}
+
+section#introduccion {
+    background-color: #f1f1f1; /* Fondo gris suave para la sección */
+    padding: 40px 0;
+}
+
+

@@ -15,11 +15,11 @@
         <nav class="container">
             <ul class="nav justify-content-center">
                 <li class="nav-item"><a class="nav-link text-white" href="#">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Rutas</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#rutas">Rutas</a></li>
                 <li class="nav-item"><a class="nav-link text-white" href="#">Servicios</a></li>
                 <li class="nav-item"><a class="nav-link text-white" href="#">Experiencias</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Blog</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Comunidad</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -44,18 +44,91 @@
             </div>
         </div>
     
-        <!-- Contenido adicional fuera del carrusel -->
-        <div class="hero-content text-center text-white">
-            <h1>Bienvenido a la Ruta del Nómade</h1>
-            <p>Tu próxima aventura laboral comienza aquí.</p>
-            <button class="btn btn-primary">Explorar Rutas</button>
+<!-- Sección Introducción -->
+<section id="introduccion" class="text-center py-5 intermedio">
+    <div class="container">
+        <!-- Párrafo introductorio -->
+        <h2 class="mb-4">Conectamos Nómadas Digitales con Rutas Inolvidables</h2>
+        <p class="mb-5">Todo lo que un nómada necesita, en un solo lugar.</p>
+
+        <div class="row justify-content-center">
+            <!-- Card 1: Espacios de Coworking -->
+            <div class="col-md-3 mb-4">
+                <div class="card border-0 shadow-sm card-hover">
+                    <div class="card-body">
+                        <i class="fas fa-laptop-house fa-3x mb-3"></i>
+                        <h5 class="card-title">Espacios de Coworking</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2: Hospedaje -->
+            <div class="col-md-3 mb-4">
+                <div class="card border-0 shadow-sm card-hover">
+                    <div class="card-body">
+                        <i class="fas fa-bed fa-3x mb-3"></i>
+                        <h5 class="card-title">Hospedaje de Calidad</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3: Lugares para Comer -->
+            <div class="col-md-3 mb-4">
+                <div class="card border-0 shadow-sm card-hover">
+                    <div class="card-body">
+                        <i class="fas fa-utensils fa-3x mb-3"></i>
+                        <h5 class="card-title">Lugares para Comer</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4: Bares -->
+            <div class="col-md-3 mb-4">
+                <div class="card border-0 shadow-sm card-hover">
+                    <div class="card-body">
+                        <i class="fas fa-glass-martini-alt fa-3x mb-3"></i>
+                        <h5 class="card-title">Bares y Cafés</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5: Actividades al Aire Libre -->
+            <div class="col-md-3 mb-4">
+                <div class="card border-0 shadow-sm card-hover">
+                    <div class="card-body">
+                        <i class="fas fa-mountain fa-3x mb-3"></i>
+                        <h5 class="card-title">Actividades al Aire Libre</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6: Alquiler de Transporte -->
+            <div class="col-md-3 mb-4">
+                <div class="card border-0 shadow-sm card-hover">
+                    <div class="card-body">
+                        <i class="fas fa-car fa-3x mb-3"></i>
+                        <h5 class="card-title">Alquiler de Transporte</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 7: Comunidad de Viajeros -->
+            <div class="col-md-3 mb-4">
+                <div class="card border-0 shadow-sm card-hover">
+                    <div class="card-body">
+                        <i class="fas fa-users fa-3x mb-3"></i>
+                        <h5 class="card-title">Comunidad de Viajeros</h5>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
+
+
+
     
 
     <!-- Rutas -->
     <section id="rutas" class="container py-5">
-        <h2 class="text-center mb-4">Rutas disponibles</h2>
+        <h2 class="text-center mb-4">Bienvenido a la Ruta del Nómade</h2>
+        <p class="text-center mb-4">Tu próxima aventura laboral comienza aquí.</p>  
+        <h3 class="text-center mb-4">Rutas disponibles</h3>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
                 <div class="card">
@@ -63,7 +136,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Ruta Cultural</h5>
                         <p class="card-text">Recorre Buenos Aires y disfruta de su vibrante escena teatral y cultural.</p>
-                        <button class="btn btn-info">Conocer más</button>
+                        <button class="btn btn-info" disabled>Conocer más</button>
                     </div>
                 </div>
             </div>
@@ -73,7 +146,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Ruta Natural</h5>
                         <p class="card-text">Explora los hermosos paisajes de Salta y sus caminos llenos de magia natural.</p>
-                        <button class="btn btn-info">Conocer más</button>
+                        <button class="btn btn-info" disabled>Conocer más</button>
                     </div>
                 </div>
             </div>
@@ -83,7 +156,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Ruta Exótica</h5>
                         <p class="card-text">Descubre Mendoza y sus viñedos, una experiencia única para los nómadas digitales.</p>
-                        <button class="btn btn-info">Conocer más</button>
+                         <a  href="pages/mendoza.html" > <button class="btn btn-info">Conocer más</button> </a>
                     </div>
                 </div>
             </div>
@@ -91,10 +164,10 @@
     </section>
 
     <!-- Encuesta -->
-    <section id="encuesta" class="text-center py-5">
+    <section id="encuesta" class="text-center py-5 intermedio">
         <h2>Encuesta Personalizada</h2>
         <p>Ayúdanos a conocerte mejor para ofrecerte las mejores rutas según tus preferencias.</p>
-        <button class="btn btn-primary">Realizar Encuesta</button>
+          <a  href="https://forms.gle/G3y2kzEybVAbpajz8" target="_blank" <button class="btn btn-primary">Realizar Encuesta</button> </a>      
     </section>
 
     <!-- Testimonios -->
