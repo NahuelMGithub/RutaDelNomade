@@ -142,6 +142,8 @@ footer p {
     color: #272727;
 }
 
+
+
 .card i {
     color: #007bff; /* Color azul, se puede cambiar */
 }
@@ -153,7 +155,9 @@ footer p {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra más prominente */
 }
 
+
 .card-body {
+ 
     text-align: center; /* Centra el contenido dentro de las cards */
 }
 
