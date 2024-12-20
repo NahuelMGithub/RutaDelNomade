@@ -17,13 +17,33 @@
             <ul class="nav justify-content-center">
                 <li class="nav-item"><a class="nav-link text-white" href="#">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link text-white" href="#rutas">Rutas</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Servicios</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Experiencias</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Comunidad</a></li>
+
+                <!-- Menú desplegable con hover -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white" href="#" id="servicesDropdown" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Servicios
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item" href="#coworking">Coworking</a></li>
+                        <li><a class="dropdown-item" href="#hospedaje">Hospedaje</a></li>
+                        <li><a class="dropdown-item" href="#gastronomia">Gastronomía</a></li>
+                        <li><a class="dropdown-item" href="#cafeteria">Cafetería y Bares</a></li>
+                        <li><a class="dropdown-item" href="#actividades">Actividades</a></li>
+                        <li><a class="dropdown-item" href="#transporte">Transporte</a></li>
+                        <li><a class="dropdown-item" href="#contactos">Contactos</a></li>
+                        <li><a class="dropdown-item" href="#comunidad">Comunidad</a></li>
+                        <li><a class="dropdown-item" href="#moneda-crypto">Cambio de moneda y Crypto</a></li>
+                    </ul>
+                </li>
+
                 <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
+
+
+
 
     <!-- Carrusel de imágenes (Hero Content) -->
 
@@ -46,16 +66,45 @@
             </div>
         </div>
 
+
+
         <!-- Sección Introducción -->
         <section id="introduccion" class="text-center py-5 intermedio">
+            <div class="container">
+                <!-- Párrafo explicativo -->
+                <h2 class="mb-4">Bienvenido a la Ruta del Nómade</h2>
+                <p class="mb-5">
+                    Ruta del Nómade es la plataforma ideal para nómadas digitales. Te ofrecemos un recorrido
+                    personalizado con varias paradas en diferentes ciudades del país,
+                    donde podrás quedarte el tiempo que desees. Cada ciudad en nuestra ruta está equipada
+                    con todos los servicios esenciales que necesitas para trabajar a
+                    distancia: co-working, hospedaje, gastronomía, y actividades recreativas. Además, te facilitamos el
+                    pago con criptomonedas y contamos con un equipo local que te
+                    asistirá en todo momento, conectándote con opciones turísticas y actividades al aire libre para que
+                    disfrutes mientras trabajas. Al finalizar tu estancia en una ciudad,
+                    simplemente continuarás tu viaje hacia la siguiente parada de tu ruta, sin preocupaciones. Descubre
+                    un nuevo estilo de vida, trabaja desde los mejores lugares y
+                    disfruta de una experiencia única mientras exploras lo mejor de Argentina.
+                </p>
+
+                <!-- Botones para Servicios y Rutas -->
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="#servicios" class="btn btn-primary">Ver Servicios</a>
+                    <a href="#rutas" class="btn btn-info">Explorar Rutas</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Servicios -->
+        <section id="servicios" class="text-center py-5 intermedio">
             <div class="container">
                 <!-- Párrafo introductorio -->
                 <h2 class="mb-4">Conectamos Nómadas Digitales con Rutas Inolvidables</h2>
                 <p class="mb-5">Todo lo que un nómada necesita, en un solo lugar.</p>
 
                 <div class="row justify-content-center">
-                    <!-- Card 1: Espacios de Coworking -->
-                    <div class="col-md-3 mb-4">
+                    <!-- Grupo 1: Primeras tres tarjetas -->
+                    <div class="col-md-4 mb-4">
                         <div class="card border-0 shadow-sm card-hover">
                             <div class="card-body">
                                 <i class="fas fa-laptop-house fa-3x mb-3"></i>
@@ -63,8 +112,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Card 2: Hospedaje -->
-                    <div class="col-md-3 mb-4">
+                    <div class="col-md-4 mb-4">
                         <div class="card border-0 shadow-sm card-hover">
                             <div class="card-body">
                                 <i class="fas fa-bed fa-3x mb-3"></i>
@@ -72,17 +120,19 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Card 3: Lugares para Comer -->
-                    <div class="col-md-3 mb-4">
+                    <div class="col-md-4 mb-4">
                         <div class="card border-0 shadow-sm card-hover">
                             <div class="card-body">
                                 <i class="fas fa-utensils fa-3x mb-3"></i>
-                                <h5 class="card-title">Gastronomía autóctona </h5>
+                                <h5 class="card-title">Gastronomía autóctona</h5>
                             </div>
                         </div>
                     </div>
-                    <!-- Card 4: Bares -->
-                    <div class="col-md-3 mb-4">
+                </div>
+
+                <div class="row justify-content-center">
+                    <!-- Grupo 2: Siguientes tres tarjetas -->
+                    <div class="col-md-4 mb-4">
                         <div class="card border-0 shadow-sm card-hover">
                             <div class="card-body">
                                 <i class="fas fa-glass-martini-alt fa-3x mb-3"></i>
@@ -90,8 +140,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Card 5: Actividades al Aire Libre -->
-                    <div class="col-md-3 mb-4">
+                    <div class="col-md-4 mb-4">
                         <div class="card border-0 shadow-sm card-hover">
                             <div class="card-body">
                                 <i class="fas fa-mountain fa-3x mb-3"></i>
@@ -99,8 +148,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Card 6: Alquiler de Transporte -->
-                    <div class="col-md-3 mb-4">
+                    <div class="col-md-4 mb-4">
                         <div class="card border-0 shadow-sm card-hover">
                             <div class="card-body">
                                 <i class="fas fa-car fa-3x mb-3"></i>
@@ -108,17 +156,19 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Card 7: Comunidad de Viajeros -->
-                    <div class="col-md-3 mb-4">
+                </div>
+
+                <div class="row justify-content-center">
+                    <!-- Grupo 3: Últimas tres tarjetas -->
+                    <div class="col-md-4 mb-4">
                         <div class="card border-0 shadow-sm card-hover">
                             <div class="card-body">
                                 <i class="fas fa-users fa-3x mb-3"></i>
-                                <h5 class="card-title">Contactos foraneos</h5>
+                                <h5 class="card-title">Contactos Foráneos</h5>
                             </div>
                         </div>
                     </div>
-                    <!-- Card 8: Comunidad de Viajeros -->
-                    <div class="col-md-3 mb-4">
+                    <div class="col-md-4 mb-4">
                         <div class="card border-0 shadow-sm card-hover">
                             <div class="card-body">
                                 <i class="fas fa-users fa-3x mb-3"></i>
@@ -126,12 +176,17 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card border-0 shadow-sm card-hover">
+                            <div class="card-body">
+                                <i class="fas fa-bitcoin fa-3x mb-3"></i>
+                                <h5 class="card-title">Posibilidad de abonar con Crypto</h5>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
-
-
 
 
 
