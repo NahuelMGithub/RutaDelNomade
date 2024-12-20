@@ -9,18 +9,38 @@
     <link href="../styles.css" rel="stylesheet"> <!-- Asegúrate de que el archivo CSS esté en la misma carpeta -->
 </head>
 <body>
-    <header class="bg-dark text-white py-4">
-        <nav class="container">
-            <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link text-white" href="../index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#rutas">Rutas</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Servicios</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Experiencias</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Comunidad</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+
+  <header class="bg-dark text-white py-4">
+    <nav class="container">
+        <ul class="nav justify-content-center">
+          <li class="nav-item"><a class="nav-link text-white" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#rutas">Rutas</a></li>
+
+            <!-- Menú desplegable con hover -->
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white" href="#" id="servicesDropdown" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Servicios
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                    <li><a class="dropdown-item" href="#coworking">Coworking</a></li>
+                    <li><a class="dropdown-item" href="#hospedaje">Hospedaje</a></li>
+                    <li><a class="dropdown-item" href="#gastronomia">Gastronomía</a></li>
+                    <li><a class="dropdown-item" href="#cafeteria">Cafetería y Bares</a></li>
+                    <li><a class="dropdown-item" href="#actividades">Actividades</a></li>
+                    <li><a class="dropdown-item" href="#transporte">Transporte</a></li>
+                    <li><a class="dropdown-item" href="#contactos">Contactos</a></li>
+                    <li><a class="dropdown-item" href="#comunidad">Comunidad</a></li>
+                    <li><a class="dropdown-item" href="#moneda-crypto">Cambio de moneda y Crypto</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+
     <section id="hero">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -129,6 +149,9 @@
 
     <!------------------------------------ Ciudades en detalle  ---------------------------------------->
   
+
+
+    
     <section id="mendoza-capital" class="py-5  ">
         <div class="container" id="ciudad1">
           <!-- Título de la ciudad -->
@@ -144,20 +167,32 @@
           <!-- Modal -->
           <div class="modal fade" id="mendozaModal" tabindex="-1" aria-labelledby="mendozaModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="mendozaModalLabel">Experiencia en Mendoza Capital</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="mendozaModalLabel">Experiencia en Mendoza Capital</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>En Mendoza Capital, disfrutarás de una experiencia única que combina naturaleza, aventura y cultura. Aquí algunas de las actividades que no te puedes perder:</p>
+                        
+                        <ul>
+                            <li><strong>Parque General San Martín:</strong> Un espacio verde monumental ideal para paseos al aire libre, caminatas y picnic, donde podrás explorar el lago artificial y el Cerro de la Gloria.</li>
+                            <li><strong>Rafting en el río Mendoza:</strong> Siente la emoción del rafting en las aguas del río Mendoza, un destino ideal para los amantes de los deportes de aventura.</li>
+                            <li><strong>Ruta del Vino en bicicleta:</strong> Pedalea a través de los viñedos de Mendoza, disfruta de un recorrido guiado por bodegas y termina con una cata de vinos de clase mundial.</li>
+                            <li><strong>Tour por la Bodega Catena Zapata:</strong> Conoce una de las bodegas más famosas de la región y participa en un recorrido donde aprenderás sobre el proceso de vinificación y disfrutarás de una cata exclusiva.</li>
+                            <li><strong>Senderismo en el Cerro Arco:</strong> Si eres amante del senderismo, el Cerro Arco es uno de los mejores puntos para disfrutar de una vista panorámica de Mendoza y la Cordillera de los Andes.</li>
+                            <li><strong>Visita al Centro Histórico:</strong> Disfruta de un recorrido por las calles de la ciudad, visitando lugares como la Plaza Independencia, la Plaza de la Defensa y la Catedral de Mendoza.</li>
+                            <li><strong>Excursión a Potrerillos:</strong> A tan solo unos kilómetros de Mendoza Capital, Potrerillos ofrece actividades como paseos en bote, pesca y senderismo en medio de un paisaje impresionante.</li>
+                        </ul>
+        
+                        <p>Después de un día de actividades, podrás relajarte en los mejores hoteles y coworks de la ciudad, como el Hotel Diplomatic, con vistas a los Andes, o disfrutar del espacio moderno del Coffice Mendoza, ideal para trabajar mientras disfrutas de la ciudad.</p>
+                        
+                        <p><strong>Tiempo recomendado: 40 días</strong></p>
+                    </div>
                 </div>
-                <div class="modal-body">
-                  Primero, en Mendoza Capital, disfrutarás de una mezcla de trabajo y aventura. Pasarás unos días en la ciudad, 
-                  recorriendo el Parque General San Martín, la Bodega Catena Zapata y el Cerro de la Gloria. Practicarás rafting en 
-                  el río Mendoza y recorrerás la Ruta del Vino en bicicleta. 
-                </div>
-              </div>
             </div>
-          </div>
-      
+        </div>
+        
           <!-- Sección Coworks y Hotel -->
           <div class="row mb-5">
             <div class="col-md-6">
@@ -229,6 +264,7 @@
                   En San Rafael, disfrutarás del impresionante Cañón del Atuel, rutas de aventura en 4x4 y rafting en la Laguna El Nihuil. 
                   Es el destino perfecto para quienes aman la naturaleza y buscan experiencias al aire libre.
                 </div>
+                <p><strong>Tiempo recomendado: 30 días</strong></p>
               </div>
             </div>
           </div>
@@ -302,6 +338,7 @@
                   En el Valle de Uco, tendrás experiencias únicas en viñedos premium, disfrutarás de paisajes montañosos y 
                   participarás en catas de vinos con los mejores sommeliers. Perfecto para relajarte y conectar con la naturaleza.
                 </div>
+                <p><strong>Tiempo recomendado: 30 días</strong></p>
               </div>
             </div>
           </div>
@@ -372,6 +409,7 @@
                   Tunuyán es ideal para un ritmo tranquilo: explorarás el Manzano Histórico, probarás vinos excepcionales y 
                   disfrutarás de senderos naturales perfectos para trekking.
                 </div>
+                <p><strong>Tiempo recomendado: 25 días</strong></p>
               </div>
             </div>
           </div>
@@ -443,6 +481,7 @@
                   En Malargüe, vivirás una aventura única explorando la Caverna de las Brujas, la Payunia y relajándote en las termas. 
                   Además, tendrás experiencias astronómicas únicas gracias a los cielos despejados de la región.
                 </div>
+                <p><strong>Tiempo recomendado: 40 días</strong></p>
               </div>
             </div>
           </div>
